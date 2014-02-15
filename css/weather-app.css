@@ -1,0 +1,15 @@
+.wrapper{
+  width:40%;
+  margin-top: 50px;
+}
+.input-group-addon{
+  padding: 0;
+}
+.search-btn{
+  border: 0;
+}
+.content{
+  margin-top: 10px;
+  display: none;
+}
+
