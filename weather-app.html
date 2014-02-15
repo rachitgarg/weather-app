@@ -11,7 +11,9 @@
         <input type="text" class="form-control input_text" placeholder="Enter the name of the place">
         <span class="input-group-addon"><button type="button" class="btn btn-primary search-btn">Search</button></span>
       </div>
-
+      <div id='loadingmessage'>
+        <img src='images/ajax-loader.gif'/>
+      </div>
       <div class="panel panel-default content">
         <script type="weather" id="template-weather">
           <div class="panel-heading">
@@ -56,6 +58,7 @@
     (function(){
       $('.search-btn').on('click', function(){
         var place_name = $('.input_text').val();
+        $('#loadingmessage').show();
 
         var Twitter = {
         init: function(config){
@@ -98,6 +101,7 @@
         }
       };
       $(document).on('prepended_the_data', function(){
+        $('#loadingmessage').hide();
         $('.content').fadeIn(600);
         // $('.content').sibling().slideDown(600);
       });

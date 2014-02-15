@@ -12,4 +12,12 @@
   margin-top: 10px;
   display: none;
 }
+#loadingmessage{
+  margin-top: 10%;
+  margin-left: 48%;
+  display: none;
+}
+#loadingmessage img{
+  min-height: 34px;
 
+}
